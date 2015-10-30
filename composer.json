@@ -1,0 +1,10 @@
+{
+  "name": "lms-laravel/default",
+  "description": "This is the Default theme for LMS - Laravel",
+  "type": "asgard-theme",
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "version": "alpha",
+  "minimum-stability": "dev"
+}
