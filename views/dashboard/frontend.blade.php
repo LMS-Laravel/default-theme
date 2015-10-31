@@ -16,17 +16,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('web/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/font-awesome.min.css')  }}">
-    <link rel="stylesheet" href="{{ asset('web/css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/owl.carousel.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/owl.theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/cubeportfolio.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/liquid-slider.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/spinner.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/YTPlayer.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/font-awesome.min.css')  }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/cubeportfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/liquid-slider.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/spinner.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/YTPlayer.css') }}">
+    <link rel="stylesheet" href="{{ asset_theme('web/css/main.css') }}">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -130,33 +130,33 @@
                                 <div class="img">
                                     <div class="mask"></div>
                                     <div class="new-bandage"></div>
-                                    <img src="{{ asset('web/img/about00.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
+                                    <img src="{{ asset_theme('web/img/about00.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
                                 </div>
                             </div>
                             <div class="item wow flipInY" data-wow-delay="1.1s">
                                 <div class="img">
                                     <div class="mask"></div>
-                                    <img src="{{ asset('web/img/about01.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
+                                    <img src="{{ asset_theme('web/img/about01.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
                                 </div>
                             </div>
                             <div class="item wow flipInY" data-wow-delay="1.3s">
                                 <div class="img">
                                     <div class="mask"></div>
-                                    <img src="{{ asset('web/img/about02.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
-                                </div>
-                            </div>
-                            <div class="item wow flipInY" data-wow-delay="1.3s">
-                                <div class="img">
-                                    <div class="mask"></div>
-
-                                    <img src="{{ asset('web/img/about03.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
+                                    <img src="{{ asset_theme('web/img/about02.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
                                 </div>
                             </div>
                             <div class="item wow flipInY" data-wow-delay="1.3s">
                                 <div class="img">
                                     <div class="mask"></div>
 
-                                    <img src="{{ asset('web/img/about04.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
+                                    <img src="{{ asset_theme('web/img/about03.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div class="item wow flipInY" data-wow-delay="1.3s">
+                                <div class="img">
+                                    <div class="mask"></div>
+
+                                    <img src="{{ asset_theme('web/img/about04.jpg') }}" style="width:400px; height:200px;" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                     <div class="team-slider">
 
                         <div class="member text-center wow fadeInDown divAvatar" data-wow-delay="0.6s">
-                            <img class="img-responsive avatar" src="{{ asset('web/img/member02.png') }}" alt="">
+                            <img class="img-responsive avatar" src="{{ asset_theme('web/img/member02.png') }}" alt="">
                             <h4>Angel Kurten</h4>
                             <div class="sep"></div>
                             <p>Developer PHP - CEO</p>
@@ -200,7 +200,7 @@
                         </div>
 
                         <div class="member text-center wow fadeInDown" data-wow-delay="1.0s">
-                            <img class="img-responsive avatar" src="{{ asset('web/img/member02.png') }}" alt="">
+                            <img class="img-responsive avatar" src="{{ asset_theme('web/img/member02.png') }}" alt="">
                             <h4>Angel Gamboa</h4>
                             <div class="sep"></div>
                             <p>Diseñador</p>
@@ -211,7 +211,7 @@
                         </div>
 
                         <div class="member text-center wow fadeInDown" data-wow-delay="1.2s">
-                            <img class="img-responsive avatar" src="{{ asset('web/img/member03.png') }}" alt="">
+                            <img class="img-responsive avatar" src="{{ asset_theme('web/img/member03.png') }}" alt="">
                             <h4>Rafaela Pinto</h4>
                             <div class="sep"></div>
                             <p>Developer PHP</p>
@@ -222,7 +222,7 @@
                         </div>
 
                         <div class="member text-center wow fadeInDown" data-wow-delay="1.2s">
-                            <img class="img-responsive avatar" src="{{ asset('web/img/member04.png') }}" alt="">
+                            <img class="img-responsive avatar" src="{{ asset_theme('web/img/member04.png') }}" alt="">
                             <h4>Rafa Pinto</h4>
                             <div class="sep"></div>
                             <p>Developer PHP</p>
@@ -321,20 +321,20 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="{{ asset('web/js/jquery-1.11.1.min.js') }}"></script>
-<script src="{{ asset('web/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('web/js/jquery.stellar.min.js') }}"></script>
-<script src="{{ asset('web/js/smooth-scroll.js') }}"></script>
-<script src="{{ asset('web/js/wow.min.js') }}"></script>
-<script src="{{ asset('web/js/retina-1.1.0.min.js') }}"></script>
-<script src="{{ asset('web/js/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('web/js/jquery.countTo.js') }}"></script>
-<script src="{{ asset('web/js/jquery.liquid-slider.js') }}"></script>
-<script src="{{ asset('web/js/jquery.touchSwipe.min.js') }}"></script>
-<script src="{{ asset('web/js/jquery.cubeportfolio.js') }}"></script>
-<script src="{{ asset('web/js/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('web/js/jquery.mb.YTPlayer.js') }}"></script>
-<script src="{{ asset('web/js/main.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.stellar.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/smooth-scroll.js') }}"></script>
+<script src="{{ asset_theme('web/js/wow.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/retina-1.1.0.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.countTo.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.liquid-slider.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.touchSwipe.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.cubeportfolio.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset_theme('web/js/jquery.mb.YTPlayer.js') }}"></script>
+<script src="{{ asset_theme('web/js/main.js') }}"></script>
 
 </body>
 </html>

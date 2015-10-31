@@ -1,7 +1,7 @@
 @extends(view_path('layouts.layout'))
 
 @section('css')
-    <link type="text/css" rel="stylesheet" href="{{ asset('platform/js/syntax/styles/shCoreDjango.css') }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ asset_theme('platform/js/syntax/styles/shCoreDjango.css') }}"/>
 @stop
 
 @section('content')
@@ -103,7 +103,7 @@
 @stop
 
 @section('scripts')
-    <script type="text/javascript" src="{{ asset('platform/js/syntax/scripts/shCore.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('platform/js/syntax/scripts/shBrushPhp.js') }}"></script>
+    <script type="text/javascript" src="{{ asset_theme('platform/js/syntax/scripts/shCore.js') }}"></script>
+    <script type="text/javascript" src="{{ asset_theme('platform/js/syntax/scripts/shBrushPhp.js') }}"></script>
     <script type="text/javascript">SyntaxHighlighter.all();</script>
 @stop

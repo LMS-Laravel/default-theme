@@ -9,11 +9,11 @@
         <h1>
             {{ $profile->full_name }}
             <br>
-            <small>@trans('user::ui.common.country'): <img src="{{ asset('platform/img/flags/'.$profile->country->iso2.'.png') }}" data-toggle="tooltip" title="{{ $profile->country->spanish_name }}"/></small>
+            <small>@trans('user::ui.common.country'): <img src="{{ asset_theme('platform/img/flags/'.$profile->country->iso2.'.png') }}" data-toggle="tooltip" title="{{ $profile->country->spanish_name }}"/></small>
         </h1>
     </div>
     <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
-    <img src="{{ asset('platform/img/placeholders/headers/profile_header.png')}}" alt="header image" class="animation-pulseSlow">
+    <img src="{{ asset_theme('platform/img/placeholders/headers/profile_header.png')}}" alt="header image" class="animation-pulseSlow">
 </div>
 <!-- END User Profile Header -->
 

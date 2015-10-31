@@ -3,7 +3,7 @@
 
     <!--logo and iconic logo start-->
     <div class="logo">
-        <a><img src="{{ asset('themes/admin/images/logo.png')  }}" alt=""></a>
+        <a><img src="{{ asset_theme('themes/admin/images/logo.png')  }}" alt=""></a>
     </div>
 
     <div class="left-side-inner">

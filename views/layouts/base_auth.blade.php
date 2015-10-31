@@ -26,39 +26,39 @@
 
         <!-- Stylesheets -->
         <!-- Bootstrap is included in its original form, unaltered -->
-        <link rel="stylesheet" href="{{ asset('platform/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset_theme('platform/css/bootstrap.min.css') }}">
 
         <!-- Related styles of various icon packs and plugins -->
-        <link rel="stylesheet" href="{{ asset('platform/css/plugins.css') }}">
+        <link rel="stylesheet" href="{{ asset_theme('platform/css/plugins.css') }}">
 
         <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
-        <link rel="stylesheet" href="{{ asset('platform/css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset_theme('platform/css/main.css') }}">
 
         <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
-        <link rel="stylesheet" href="{{ asset('platform/css/themes.css') }}">
+        <link rel="stylesheet" href="{{ asset_theme('platform/css/themes.css') }}">
         <!-- END Stylesheets -->
 
         <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
-        <script src="{{ asset('platform/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js') }}"></script>
+        <script src="{{ asset_theme('platform/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js') }}"></script>
     </head>
     <body>
 
         <!-- Login Full Background -->
         <!-- For best results use an image with a resolution of 1280x1280 pixels (prefer a blurred image for smaller file size) -->
-        <img src="{{ asset('platform/img/placeholders/backgrounds/login_full_bg.jpg') }}" alt="Login" class="full-bg animation-pulseSlow">
+        <img src="{{ asset_theme('platform/img/placeholders/backgrounds/login_full_bg.jpg') }}" alt="Login" class="full-bg animation-pulseSlow">
         <!-- END Login Full Background -->
 
         @yield('content')
 
         <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>!window.jQuery && document.write(decodeURI('%3Cscript src="{{ asset('platform/js/vendor/jquery-1.11.1.min.js') }}"%3E%3C/script%3E'));</script>
+        <script>!window.jQuery && document.write(decodeURI('%3Cscript src="{{ asset_theme('platform/js/vendor/jquery-1.11.1.min.js') }}"%3E%3C/script%3E'));</script>
 
         <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
-        <script src="{{ asset('platform/js/vendor/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('platform/js/plugins.js') }}"></script>
-        <script src="{{ asset('platform/js/app.js') }}"></script>
+        <script src="{{ asset_theme('platform/js/vendor/bootstrap.min.js') }}"></script>
+        <script src="{{ asset_theme('platform/js/plugins.js') }}"></script>
+        <script src="{{ asset_theme('platform/js/app.js') }}"></script>
     </body>
 </html>
