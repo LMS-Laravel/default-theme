@@ -10,15 +10,7 @@
             <br>
             @trans('user::ui.common.message-auth')
         </h1>
-        @if($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        @include(view_path('errors/form_error'))
     </div>
     <!-- END Register Title -->
 

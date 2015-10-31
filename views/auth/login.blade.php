@@ -10,7 +10,7 @@
             <br>
             @trans('user::ui.common.message-auth')
         </h1>
-        @include('themes/default/views/errors/form_error')
+        @include(view_path('errors/form_error'))
     </div>
     <!-- END Login Title -->
 
@@ -22,7 +22,7 @@
             <div class="col-xs-12">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="gi gi-user"></i></span>
-                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="{{ trans('user::ui.common.username') }}" required>
+                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="{{ trans('user::ui.login.username') }}" required>
                 </div>
             </div>
         </div>
