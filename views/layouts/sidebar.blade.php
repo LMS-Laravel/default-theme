@@ -13,13 +13,13 @@
             <!-- User Info -->
             <div class="sidebar-section sidebar-user clearfix">
                 <div class="sidebar-user-avatar">
-                    <a href="#">
+                    <a href="{{ route('learning.user.profile', \Auth::user()->slug) }}">
                         <img src="{{ Gravatar::src(Auth::user()->email) }}" alt="avatar">
                     </a>
                 </div>
                 <div class="sidebar-user-name">{{{ Auth::user()->full_name }}}</div>
                 <div class="sidebar-user-links">
-                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Perfil"><i class="gi gi-user"></i></a>
+                    <a href="{{ route('learning.user.profile', \Auth::user()->slug) }}" data-toggle="tooltip" data-placement="bottom" title="Perfil"><i class="gi gi-user"></i></a>
                     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Mensajes"><i class="gi gi-envelope"></i></a>
                     <a href="#modal-user-settings" data-toggle="modal" class="enable-tooltip" data-placement="bottom" title="Ajustes"><i class="gi gi-cogwheel"></i></a>
                     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Salir"><i class="gi gi-exit"></i></a>

@@ -32,7 +32,7 @@
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                 <li class="dropdown-header text-center">Cuenta</li>
                 <li>
-                    <a href="#">
+                    <a href="{{ route('learning.user.profile', \Auth::user()->slug) }}">
                         <i class="fa fa-user fa-fw pull-right"></i>
                         Perfil
                     </a>

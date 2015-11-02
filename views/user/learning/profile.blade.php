@@ -146,6 +146,8 @@
             <!-- END Info Content -->
         </div>
         <!-- END Info Block -->
+
+        @include(view_path('layouts.widget.edit_user'))
     </div>
 <!-- END Second Column -->
 </div>

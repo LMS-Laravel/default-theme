@@ -17,7 +17,7 @@
                         <img src="{{ Gravatar::src(Auth::user()->email) }}" alt="avatar" class="img-circle">
                     </td>
                     <td>
-                        <a href="#"><strong>{{{ Auth::user()->full_name }}} </strong></a>
+                        <a href="{{ route('learning.user.profile', \Auth::user()->slug) }}"><strong>{{{ Auth::user()->full_name }}} </strong></a>
                     </td>
                 </tr>
                 <tr>
