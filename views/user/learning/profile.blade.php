@@ -146,8 +146,10 @@
             <!-- END Info Content -->
         </div>
         <!-- END Info Block -->
+        @if($updatePolice)
+            @include(view_path('layouts.widget.edit_user'))
+        @endif
 
-        @include(view_path('layouts.widget.edit_user'))
     </div>
 <!-- END Second Column -->
 </div>
