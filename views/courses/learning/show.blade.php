@@ -36,7 +36,7 @@
                     <h3 class="widget-content-light">
                         {{ $course->name }}
                         <br>
-                        <small>{{ trans('course::show.messages.teacher') }}: <a href="#">{{ $course->teacher->full_name }}</a></small>
+                        <small>{{ trans('course::show.messages.teacher') }}: <a href="{{ route('learning.user.profile', $course->teacher->slug) }}">{{ $course->teacher->full_name }}</a></small>
                     </h3>
                 </div>
                 <!-- END Widget Header -->
@@ -66,7 +66,7 @@
                         <tbody>
                             @foreach($module->lessons as $lesson)
                             <tr>
-                                <td><a href="{{ route('learning.lesson.show', $lesson->id) }}"><i class="fa fa-ellipsis-h"></i>  {{ $lesson->title }}</a></td>
+                                <td><a href="{{ route('learning.lesson.show', $lesson->slug) }}"><i class="fa fa-ellipsis-h"></i>  {{ $lesson->title }}</a></td>
                                 <td class="text-right">
                                     @if($lesson->view == true)
                                     <a class="btn btn-xs btn-info"  data-toggle="tooltip" title="{{ trans('course::show.btn.view') }}" href="#"><i class="fa fa-check"></i></a>

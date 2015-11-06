@@ -41,8 +41,8 @@
                     <a href="javascript:void(0)" class="widget-image-container animation-fadeIn">
                         <span class="widget-icon themed-background"><i class="fa fa-bank"></i></span>
                     </a>
-                    <!-- <a href="{{ route('learning.course.show', $lesson->module->course->id) }}" class="btn btn-sm btn-default pull-right">Ir al curso <i class="fa fa-chevron-right"></i></a> -->
-                    <a href="{{ route('learning.course.show', $lesson->module->course->id) }}" class="btn btn-sm btn-default"><i class="fa fa-chevron-left"></i> Ir al curso</a>
+                    <!-- <a href="{{ route('learning.course.show', $lesson->module->course->slug) }}" class="btn btn-sm btn-default pull-right">Ir al curso <i class="fa fa-chevron-right"></i></a> -->
+                    <a href="{{ route('learning.course.show', $lesson->module->course->slug) }}" class="btn btn-sm btn-default"><i class="fa fa-chevron-left"></i> Ir al curso</a>
                     <hr>
                     <!-- Lesson Content -->
                     <h3 class="sub-header">{{ $lesson->title }}</h3>
@@ -56,7 +56,7 @@
                     <ul class="media-list push">
                         <li class="media">
                            @foreach($lesson->comments as $comment)
-                           <li class="media">
+                            <li class="media" style="border: 1px solid #888">
                                <a href="#" class="pull-left">
                                    <img src="{{ Gravatar::src($comment->user->email) }}" alt="Avatar" class="img-circle">
                                </a>
@@ -89,7 +89,7 @@
         <div class="block">
             <!-- About Content -->
             <div class="block-section">
-                <a href="javascript:void(0)" class="btn btn-lg btn-default btn-block"><i class="fa fa-download"></i> {{ trans('course::lesson/show.btn.download') }}</a>
+                <a target="_blank" href="{{ $lesson->download }}" class="btn btn-lg btn-default btn-block"><i class="fa fa-download"></i> {{ trans('course::lesson/show.btn.download') }}</a>
             </div>
             <!-- END About Content -->
         </div>
