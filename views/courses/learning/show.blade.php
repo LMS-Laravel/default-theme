@@ -1,4 +1,4 @@
-@extends(view_path('layouts.base_auth'))
+@extends(view_path('layouts.layout'))
 
 @section('content')
 <!-- Courses Header -->

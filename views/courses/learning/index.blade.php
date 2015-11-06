@@ -34,7 +34,7 @@
                                 <button class="btn btn-xs btn-default" data-toggle="tooltip" title="{{ trans('course::index.btn.favorite') }}"><i class="fa fa-heart text-danger"></i></button>
                             </div>
                             <h3 class="widget-content-light">
-                                <a href="{{ route('learning.course.show', $course->id) }}" class="themed-color-{{ $colors[$course->level - 1] }}">{{ $course->name }}</a><br>
+                                <a href="{{ route('learning.course.show', $course->slug) }}" class="themed-color-{{ $colors[$course->level - 1] }}">{{ $course->name }}</a><br>
                                 <small>
                                     {{ $course->level_name }}
                                 </small>
@@ -44,13 +44,13 @@
 
                         <!-- Widget Main -->
                         <div class="widget-main">
-                            <a href="{{ route('learning.course.show', $course->id) }}" class="widget-image-container animation-fadeIn">
+                            <a href="{{ route('learning.course.show', $course->slug) }}" class="widget-image-container animation-fadeIn">
                                 <span class="widget-icon themed-background-{{ $colors[$course->level - 1] }}"><i class="fa fa-code"></i></span>
                             </a>
-                            <a href="{{ route('learning.course.show', $course->id) }}" class="btn btn-sm btn-default pull-right">
+                            <a href="{{ route('learning.course.show', $course->slug) }}" class="btn btn-sm btn-default pull-right">
                                 {{ count($course->modules) }} {{ trans('course::index.btn.module') }}
                             </a>
-                            <a href="{{ route('learning.course.show', $course->id) }}" class="btn btn-sm btn-success">
+                            <a href="{{ route('learning.course.show', $course->slug) }}" class="btn btn-sm btn-success">
                                 <i class="fa fa-eye"></i>
                             </a>
                         </div>
