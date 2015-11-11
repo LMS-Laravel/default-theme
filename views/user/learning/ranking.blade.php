@@ -5,7 +5,7 @@
 <div class="content-header">
     <div class="header-section">
         <h1>
-            <i class="gi gi-share_alt"></i>{{ $title }}<br><small>Solo los mejores estan aqui!</small>
+            <i class="gi gi-share_alt"></i>{{ $title }}<br><small>@trans('user::ui.ranking.description')</small>
         </h1>
     </div>
 </div>

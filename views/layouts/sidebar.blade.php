@@ -40,10 +40,10 @@
                     <span class="sidebar-header-title">@trans('dashboard::menus.sidebar.submenu.ranking.title')</span>
                 </li>
                 <li>
-                    <a href="@route('learning.user.ranking.global')"><i class="gi gi-cup sidebar-nav-icon"></i>@trans('dashboard::menus.sidebar.submenu.ranking.global')</a>
+                    <a href="@route('learning.user.ranking')"><i class="gi gi-cup sidebar-nav-icon"></i>@trans('dashboard::menus.sidebar.submenu.ranking.global')</a>
                 </li>
                 <li>
-                    <a href="#"><i class="gi gi-cup sidebar-nav-icon"></i>{{{ Auth::user()->country->short_name }}}</a>
+                    <a href="{{ route('learning.user.ranking', [Auth::user()->country->iso2]) }}"><i class="gi gi-cup sidebar-nav-icon"></i>{{{ Auth::user()->country->short_name }}}</a>
                 </li>
 
                 @if(true)
