@@ -10,7 +10,7 @@
             <br>
             @trans('user::ui.common.message-auth')
         </h1>
-        @include(view_path('errors/form_error'))
+        @include(view_path('errors.form-error'))
     </div>
     <!-- END Register Title -->
 
